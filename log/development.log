@@ -1,0 +1,6 @@
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-17 22:18:54 -0300
+Processing by RankController#listUnis as HTML
+  Rendered rank/listUnis.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 553ms (Views: 546.0ms | ActiveRecord: 0.0ms)
