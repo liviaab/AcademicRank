@@ -1,0 +1,2 @@
+# AcademicRank
+First RoR project
