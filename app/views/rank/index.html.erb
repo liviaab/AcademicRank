@@ -1,0 +1,20 @@
+
+<div class="main">
+  <div class="container">
+    <h1>Academic Rank  <i class="fas fa-user-graduate"></i></h1> 
+    <p>In this page you can see the ranking of all brazilian universities!</p>
+  </div>
+</div>
+
+
+<table>
+	<tr><th>University Name</th><th>Final Score</th></tr>
+	<% @universities.each do |university| %> 
+	<tr class="university center"> 
+	  <td class="uni-name"><%= university.university_name %></td> 
+	  <td class="uni-score"><%= university.final_score %></td> 
+	</tr> 
+	<% end %>		
+</table>
+
+

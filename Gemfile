@@ -45,3 +45,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'font-awesome-sass', '~> 5.0.13'

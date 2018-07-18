@@ -1,6 +1,7 @@
 class RankController < ApplicationController
 
-	def listUnis
+	def index
+		@universities = University.all
 	end
 
 end

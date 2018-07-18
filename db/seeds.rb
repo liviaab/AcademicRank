@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+University.destroy_all
+
+University.create!([
+	{
+		university_name: "UFMG",
+		final_score: 77.6
+	},
+	{
+		university_name: "USP",
+		final_score: 80.5
+	}])
+
+p "#{University.count} line(s) affected."
