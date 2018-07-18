@@ -1,0 +1,26 @@
+
+<div class="main">
+  <div class="container">
+    <h1>Academic Rank  <i class="fas fa-user-graduate"></i></h1> 
+    <p>In this page you can add universities to our rank.</p>
+  </div>
+</div>
+
+
+<div class="create">
+  <div class="container">
+    
+    <%= form_for(@university) do |f| %>
+      <div class="field">
+    		<%= f.label :name %>
+        <%= f.text_field :university_name %> <br><br>
+        <%= f.label :final_score %>
+        <%= f.text_field :final_score %><br><br>
+    	</div>
+      <div class="actions">
+        <%= f.submit "Create" %>
+    	</div>
+  	<%end%>
+    
+  </div>
+</div>

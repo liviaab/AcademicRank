@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-	root 'rank#index'
-  resources :rank
+  
+  root 'rank#index'	
+  get  '/rank/new' => 'rank#new'
+  #post 'university' => 'rank#create'
+  resources :universities 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
