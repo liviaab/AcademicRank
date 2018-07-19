@@ -3,6 +3,12 @@ class UniversitiesController < ApplicationController
 		@university = University.new
 	end
 
+	def show 
+		@university = University.find(params[:id]) 
+		@courses = @university.courses 
+	end
+
+
 	def create
 		@university = University.new(uni_params)
 		if @university.save

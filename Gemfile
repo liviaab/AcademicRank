@@ -46,3 +46,5 @@ group :development do
 end
 
 gem 'font-awesome-sass', '~> 5.0.13'
+
+gem 'bootstrap', '~> 4.1.1'

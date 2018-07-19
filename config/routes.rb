@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   root 'rank#index'	
   #get  '/rank/new' => 'rank#new'
   #post '/rank' => 'rank#create'
+  get '/courses/by_course' => 'courses#by_courses'
+  get '/courses/by_students' => 'courses#by_students'
 
   resources :universities 
-
+  resources :courses
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

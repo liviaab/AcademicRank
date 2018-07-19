@@ -1,0 +1,41 @@
+
+<div class='container text-center'>
+	<div class="main">
+		<h1>Academic Rank  <i class="fas fa-user-graduate"></i></h1> 
+		<p>In this page you can see the ranking of all brazilian universities!</p>
+	</div>
+
+<div class="text-center">
+	<div class="btn-toolbar mb-1" role="toolbar" aria-label="Choose ranking" >	
+		<div class="text-center rank-by-text" >	Rank by:	</div>  	
+		<div class="btn-group mr-1" role="group" >
+			<button type="button" class="btn btn-default"> 
+				<%= link_to "University" , {action: "index", controller: "rank"}, :method => :get %> 
+			</button>
+			<button type="button" class="btn btn-default">  
+				<%= link_to "Course" , {action: "by_courses", controller: "courses"}, :method => :get %> 
+			</button>
+			<button type="button" class="btn btn-default"> 
+				<%= link_to "Student's Score" , {action: "by_students", controller: "courses"}, :method => :get %> 
+			</button>    
+		</div>
+	</div>
+</div>
+
+
+
+	<br><br>
+	<table class="table table-hover">
+		<tr><th class="text-left">Course Name</th><th class="text-right">Score</th></tr>
+		<% @courses.each do |course| %> 
+		<tr class="university"> 
+		  <td class="uni-name text-left"><i class="fas fa-sm fa-pencil-alt "></i> <%= course.name %></td> 
+		  <td class="uni-score text-right"><%= course.score %></td> 
+		</tr> 
+		<% end %>		
+	</table>
+	<br><br>
+	
+	<div><%= button_to "Add Course", {action: "new", controller: "universities" }, :method => :get, class: "btn"%></div>
+</div>
+

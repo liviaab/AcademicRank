@@ -16174,3 +16174,2724 @@ Processing by RankController#index as HTML
   [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
   Rendered rank/index.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCourses (20180719012107)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCourses (20180719012107)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "universities_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180719012107"]]
+  [1m[36m (95.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 1]]
+  [1m[36m (71.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 2]]
+  [1m[35m (76.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 3]]
+  [1m[36m (98.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 4]]
+  [1m[35m (76.5ms)[0m  commit transaction
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:42:20.671143"], ["updated_at", "2018-07-19 01:42:20.671143"]]
+  [1m[35m (66.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:42:20.739243"], ["updated_at", "2018-07-19 01:42:20.739243"]]
+  [1m[36m (98.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:42:20.838857"], ["updated_at", "2018-07-19 01:42:20.838857"]]
+  [1m[35m (75.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 5]]
+  [1m[36m (79.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 6]]
+  [1m[35m (98.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 7]]
+  [1m[36m (65.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:42:59.748099"], ["updated_at", "2018-07-19 01:42:59.748099"]]
+  [1m[36m (82.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:42:59.832504"], ["updated_at", "2018-07-19 01:42:59.832504"]]
+  [1m[35m (86.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:42:59.921029"], ["updated_at", "2018-07-19 01:42:59.921029"]]
+  [1m[36m (64.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 8]]
+  [1m[36m (57.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 9]]
+  [1m[35m (275.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 10]]
+  [1m[36m (87.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:43:38.482291"], ["updated_at", "2018-07-19 01:43:38.482291"]]
+  [1m[36m (89.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:43:38.573359"], ["updated_at", "2018-07-19 01:43:38.573359"]]
+  [1m[35m (64.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:43:38.639768"], ["updated_at", "2018-07-19 01:43:38.639768"]]
+  [1m[36m (87.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 11]]
+  [1m[36m (64.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 12]]
+  [1m[35m (142.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 13]]
+  [1m[36m (65.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:43:51.622590"], ["updated_at", "2018-07-19 01:43:51.622590"]]
+  [1m[36m (67.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:43:51.691455"], ["updated_at", "2018-07-19 01:43:51.691455"]]
+  [1m[35m (86.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:43:51.780001"], ["updated_at", "2018-07-19 01:43:51.780001"]]
+  [1m[36m (86.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 14]]
+  [1m[36m (57.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 15]]
+  [1m[35m (76.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 16]]
+  [1m[36m (76.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:44:27.224662"], ["updated_at", "2018-07-19 01:44:27.224662"]]
+  [1m[36m (66.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:44:27.292957"], ["updated_at", "2018-07-19 01:44:27.292957"]]
+  [1m[35m (98.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:44:27.392604"], ["updated_at", "2018-07-19 01:44:27.392604"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 17]]
+  [1m[36m (75.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 18]]
+  [1m[35m (87.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 19]]
+  [1m[36m (65.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:44:58.940162"], ["updated_at", "2018-07-19 01:44:58.940162"]]
+  [1m[36m (93.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:44:59.035571"], ["updated_at", "2018-07-19 01:44:59.035571"]]
+  [1m[35m (75.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:44:59.113037"], ["updated_at", "2018-07-19 01:44:59.113037"]]
+  [1m[36m (64.8ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 20]]
+  [1m[36m (68.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 21]]
+  [1m[35m (76.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 22]]
+  [1m[36m (76.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:45:57.722488"], ["updated_at", "2018-07-19 01:45:57.722488"]]
+  [1m[36m (77.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:45:57.802167"], ["updated_at", "2018-07-19 01:45:57.802167"]]
+  [1m[35m (108.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:45:57.912804"], ["updated_at", "2018-07-19 01:45:57.912804"]]
+  [1m[36m (87.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "universities"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 23]]
+  [1m[36m (59.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 24]]
+  [1m[35m (87.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 25]]
+  [1m[36m (65.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:48:18.822127"], ["updated_at", "2018-07-19 01:48:18.822127"]]
+  [1m[36m (60.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:48:18.884152"], ["updated_at", "2018-07-19 01:48:18.884152"]]
+  [1m[35m (86.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:48:18.972748"], ["updated_at", "2018-07-19 01:48:18.972748"]]
+  [1m[36m (64.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "universities"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 26]]
+  [1m[36m (71.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 27]]
+  [1m[35m (87.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 28]]
+  [1m[36m (65.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:48:36.999380"], ["updated_at", "2018-07-19 01:48:36.999380"]]
+  [1m[36m (77.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:48:37.078846"], ["updated_at", "2018-07-19 01:48:37.078846"]]
+  [1m[35m (91.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:48:37.172061"], ["updated_at", "2018-07-19 01:48:37.172061"]]
+  [1m[36m (64.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "universities"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 29]]
+  [1m[36m (77.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 30]]
+  [1m[35m (142.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 31]]
+  [1m[36m (76.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 01:51:54.583779"], ["updated_at", "2018-07-19 01:51:54.583779"]]
+  [1m[36m (103.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 01:51:54.689484"], ["updated_at", "2018-07-19 01:51:54.689484"]]
+  [1m[35m (75.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 01:51:54.766916"], ["updated_at", "2018-07-19 01:51:54.766916"]]
+  [1m[36m (97.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "universities"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "courses" ("name", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ciência da Computação"], ["score", 100.0], ["created_at", "2018-07-19 01:51:54.872861"], ["updated_at", "2018-07-19 01:51:54.872861"]]
+  [1m[36m (69.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Odontologia"], ["score", 98.0], ["created_at", "2018-07-19 01:51:54.944366"], ["updated_at", "2018-07-19 01:51:54.944366"]]
+  [1m[35m (64.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "courses" ("name", "score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Sistemas de Informação"], ["score", 92.0], ["universities_id", 33], ["created_at", "2018-07-19 01:51:55.010432"], ["updated_at", "2018-07-19 01:51:55.010432"]]
+  [1m[36m (86.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Engenharia Mecânica"], ["score", 96.0], ["universities_id", 33], ["created_at", "2018-07-19 01:51:55.098989"], ["updated_at", "2018-07-19 01:51:55.098989"]]
+  [1m[35m (64.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Artes Visuais"], ["score", 82.4], ["universities_id", 34], ["created_at", "2018-07-19 01:51:55.165425"], ["updated_at", "2018-07-19 01:51:55.165425"]]
+  [1m[36m (87.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "courses"
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-18 22:52:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-18 23:24:16 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.5ms)
+  [1m[36mUniversity Load (0.9ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:22:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 5704ms (Views: 5693.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-0ed337f1bb35e8b4bec029c571ca3d51b0e2c8b238f5fade854c529f16a6bdd9.css?body=1" for 127.0.0.1 at 2018-07-19 15:22:21 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:24:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 5032ms (Views: 5021.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-04b776d8285211011988fdd5b33c36b6bbc6c2668bb776a2f70b0328ed70b1cc.css?body=1" for 127.0.0.1 at 2018-07-19 15:24:33 -0300
+
+
+Started GET "/assets/popper.self-b5d0395dd499f58f910fee32e5221f71c3b8e6f3229879a7b76d481c5446de10.js?body=1" for 127.0.0.1 at 2018-07-19 15:24:33 -0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2018-07-19 15:24:33 -0300
+
+
+Started GET "/assets/bootstrap.self-092bdc02b58589544edb4c6fbc91c4f258a47aa28d0833f413f39cfdbe78af89.js?body=1" for 127.0.0.1 at 2018-07-19 15:24:33 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:26:08 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (29.5ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `universitiesity' for #<#<Class:0x0000000095bcd0>:0x007f4e5c0955b8>
+Did you mean?  university
+               universities_path
+               universities_url
+               @universities):
+    11: 	<tr><th>University Name</th><th>Final Score</th></tr>
+    12: 	<% @universities.each do |university| %> 
+    13: 	<tr class="university center"> 
+    14: 	  <td class="uni-name"><%= universitiesity.university_name %></td> 
+    15: 	  <td class="uni-score"><%= university.final_score %></td> 
+    16: 	</tr> 
+    17: 	<% end %>		
+  app/views/rank/index.html.erb:14:in `block in _app_views_rank_index_html_erb___1206172815280430416_69987264143640'
+  app/views/rank/index.html.erb:12:in `_app_views_rank_index_html_erb___1206172815280430416_69987264143640'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:26:32 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3071ms (Views: 3070.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-974888ee8393d9cfcab6326bce40c936815a804db516f51e88454e62be66924f.css?body=1" for 127.0.0.1 at 2018-07-19 15:26:35 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:28:04 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:30:48 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.4ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3217ms (Views: 3215.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/rank.self-eddcc0299f6cede71d21a4a7dad940e15bbe848f18ade433d885ad05b073248e.css?body=1" for 127.0.0.1 at 2018-07-19 15:30:51 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:31:54 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.4ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 3346ms (Views: 3344.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/rank.self-55c464f6ec511e1adb7887320c01b04a0d70b37d45e1d7b8da44364fa2ecb95b.css?body=1" for 127.0.0.1 at 2018-07-19 15:31:57 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:32:48 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3181ms (Views: 3180.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-51adf3ce7ec3060c351d593e8e3257172ef73b20cb1700644dc1f3b272372f81.css?body=1" for 127.0.0.1 at 2018-07-19 15:32:52 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:40:03 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 3720ms (Views: 3709.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-42c17c31b51348b865cab79b3dd23bdaa92fd1392ba2287190a126477fa20a10.css?body=1" for 127.0.0.1 at 2018-07-19 15:40:06 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-1b9366a3e2b2f40707b57f3109ebac282727a1c0d9c3c0492ce86c26d905b9da.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/util.self-45f0828cb0ecf093daff5cd832e8e7242240ba50e06e7dbb5e73f982a38510f4.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-e337d16e038213f0dae48fdae1867c9c55a8b8dde6d0a9a8b6c868a83b3e6d09.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-7d8bc44f45ea4f860d04caf19caea80f6c99622056a0dbc6660bc910b33c309a.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-cf42778b03424d409ddb78640bb65816fa1675e69c6133cac2abb517ca173328.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-fa0c939fb5ed4b4134926f8c78489ec33da47239b96f7ddaea3257623ec7293f.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-e7801fc794f9782b99abc817c89f72d6b0b8901241e7669636e4c81d4b884ab0.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-cd39a55327cb02f89e68eafcb9ec332e96ad04388bba5a874669be13f01f7649.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-513b9c1b595ded47afc66781caee1f87f0976be2a5480326c2bd950a9c7c75b3.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-33c50a933f5256b5562bdb6898b38fb1e6a092c6967182b7c2927d4f156c9e64.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap/button.self-b477bd2fb3ac56ebbdde34f29ee5ad0470a028984f6c8358ba28ad686d6ab044.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 127.0.0.1 at 2018-07-19 15:40:07 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:43:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 532ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/livia/Documents/AcademicRank/app/assets/images
+  /home/livia/Documents/AcademicRank/app/assets/javascripts
+  /home/livia/Documents/AcademicRank/app/assets/stylesheets
+  /home/livia/Documents/AcademicRank/vendor/assets/javascripts
+  /home/livia/Documents/AcademicRank/vendor/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /var/lib/gems/2.3.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /var/lib/gems/2.3.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /var/lib/gems/2.3.0/gems/font-awesome-sass-5.0.13/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/font-awesome-sass-5.0.13/assets/fonts
+  /var/lib/gems/2.3.0/gems/popper_js-1.12.9/assets/javascripts
+  /var/lib/gems/2.3.0/gems/bootstrap-4.1.1/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/bootstrap-4.1.1/assets/javascripts
+  /var/lib/gems/2.3.0/gems/font-awesome-sass-5.0.13/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/bootstrap-4.1.1/assets/stylesheets):
+    2: <html>
+    3: <head>
+    4:   <title>AcademicRank</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:18
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1270973207976918099_46105240'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:43:39 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:45:39 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:45:56 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:47:58 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:47:59 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:48:05 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:48:07 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:51:47 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:58:51 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:59:54 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 15:59:57 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:01:35 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (couldn't find file 'loader' with type 'text/css'
+Checked in these paths: 
+  /home/livia/Documents/AcademicRank/app/assets/images
+  /home/livia/Documents/AcademicRank/app/assets/javascripts
+  /home/livia/Documents/AcademicRank/app/assets/stylesheets
+  /home/livia/Documents/AcademicRank/vendor/assets/javascripts
+  /home/livia/Documents/AcademicRank/vendor/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /var/lib/gems/2.3.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /var/lib/gems/2.3.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /var/lib/gems/2.3.0/gems/font-awesome-sass-5.0.13/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/font-awesome-sass-5.0.13/assets/fonts
+  /var/lib/gems/2.3.0/gems/popper_js-1.12.9/assets/javascripts
+  /var/lib/gems/2.3.0/gems/bootstrap-4.1.1/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/bootstrap-4.1.1/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>AcademicRank</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   
+  app/assets/stylesheets/application.css.scss:14
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1270973207976918099_69906421048660'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:01:53 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3727ms (Views: 3726.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-3be28b50ee7586965b99a44ca73a5ed3935525fe0e5dd6cbf51ee8ec902cdc3b.css?body=1" for 127.0.0.1 at 2018-07-19 16:01:57 -0300
+
+
+Started GET "/assets/rank.self-94a27a7651bfe65f8d6bc26b738d5e2fca04d27e8cd54181cba43c45297df277.css?body=1" for 127.0.0.1 at 2018-07-19 16:01:57 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:03:40 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3033ms (Views: 3032.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-59ed23aaf753996c5d2aa60f3857106937b07a7c4135ce849146ccef33f46918.css?body=1" for 127.0.0.1 at 2018-07-19 16:03:43 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:04:19 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3133ms (Views: 3131.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-3c24d708ce22fba04327899d45659d8e50ff6c399eef50a4a0dd4c0cc0f805b6.css?body=1" for 127.0.0.1 at 2018-07-19 16:04:22 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:04:47 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:05:03 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.4ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:05:17 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:05:24 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:05:35 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:05:42 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:05:53 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:06:03 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:07:57 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"universities/new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "universities/new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906372817380'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:08:09 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906379836660'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:08:13 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (No route matches {:action=>"/universities/new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "/universities/new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906372076940'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:08:36 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"universities/new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "universities/new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906369190400'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:08:40 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906364446280'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:08:44 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `new' for #<#<Class:0x000000026ba420>:0x007f28b542e458>):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: new}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906408208920'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:08:45 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (29.8ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `new' for #<#<Class:0x000000026ba420>:0x007f28b132f830>):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: new}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906408208920'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:08:57 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (No route matches {:action=>"universities/new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "universities/new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906370526160'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:09:32 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (No route matches {:action=>"/universities/new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "/universities/new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906427655540'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:11:16 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/?method=get" for 127.0.0.1 at 2018-07-19 16:11:22 -0300
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (7.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:12:23 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (No route matches {:action=>"/universities/new", :controller=>"rank"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "/universities/new"}, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906367049580'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:13:43 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"UniversitY"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "new", controller: "UniversitY" }, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906367183060'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:13:48 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"University"}):
+    17: 	</table>
+    18: 	<br><br>
+    19: 	<div><%= link_to 'New University', "universities/new", class:'text-center' %></div>
+    20: 	<div><%= button_to "New University", {action: "new", controller: "University" }, :method => :get%></div>
+    21: </div>
+  app/views/rank/index.html.erb:20:in `_app_views_rank_index_html_erb__1378456703599418753_69906369360800'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:13:54 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/universities/new" for 127.0.0.1 at 2018-07-19 16:13:56 -0300
+Processing by UniversitiesController#new as HTML
+  Rendered universities/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:15:08 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/universities/new" for 127.0.0.1 at 2018-07-19 16:15:12 -0300
+Processing by UniversitiesController#new as HTML
+  Rendered universities/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:15:21 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:15:30 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered rank/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:15:41 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"[0m
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:18:08 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:21:40 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:22:44 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:31:06 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:31:15 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:31:30 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:31:58 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:32:10 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:32:45 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 3218ms (Views: 3217.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/rank.self-6fc8477be0ac0cc4d9e1217d794bc86257f2cf65be63852c6e8cde9512813e2a.css?body=1" for 127.0.0.1 at 2018-07-19 16:32:48 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:33:19 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:33:27 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:33:53 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:34:02 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:34:37 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:34:47 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:34:52 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:35:12 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:35:18 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:35:26 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:36:18 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3278ms (Views: 3277.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-ee5f3625e9326f126db62fa0d85397e6efca5aaea90fc3a55a23d2d2ae7acadf.css?body=1" for 127.0.0.1 at 2018-07-19 16:36:21 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:36:21 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:36:37 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3254ms (Views: 3253.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-9af436bf91917f2dacd1b7c1a04a2b17672479ee2f7ffcebc9475f457f6eeac9.css?body=1" for 127.0.0.1 at 2018-07-19 16:36:40 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:36:54 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3210ms (Views: 3209.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-4cb8cb51a24273a26f798163af973f52efad0b2c4314c9f63d57261d509b389f.css?body=1" for 127.0.0.1 at 2018-07-19 16:36:57 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:37:05 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3257ms (Views: 3256.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-36ba5b63c3251b71b11f75f5074c1db02d38ba04f796747d4fbdf2577c04069f.css?body=1" for 127.0.0.1 at 2018-07-19 16:37:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:37:37 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:41:36 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3233ms (Views: 3232.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:41:55 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3209ms (Views: 3208.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-b0fb6d900c0121e426510c0576dfd63f07c0304acab81b9fa4780a77296e8c9e.css?body=1" for 127.0.0.1 at 2018-07-19 16:41:58 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:42:15 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3235ms (Views: 3235.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-a46bcf1c3b8700639a7f7c33a1f77615c2f90734322b3672d39f86a0675f4b7b.css?body=1" for 127.0.0.1 at 2018-07-19 16:42:18 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:42:23 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3203ms (Views: 3202.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-6b000027fbc1382a8aa659daf3cfe148aa894bdf552e97c6b45fed2285d997f3.css?body=1" for 127.0.0.1 at 2018-07-19 16:42:27 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:43:18 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:43:30 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3323ms (Views: 3322.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-93d4db6a144bbb981e94c70bef7879dbc3fcae6764f902dd2438fa5b2f1ccd4d.css?body=1" for 127.0.0.1 at 2018-07-19 16:43:33 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:44:18 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3214ms (Views: 3213.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-807fedb6ccc7f9b3bdca55e4acc3a2ea6e13fbec94f3836d627bad87316aab04.css?body=1" for 127.0.0.1 at 2018-07-19 16:44:21 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:44:27 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3216ms (Views: 3215.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-d49150ae2b17ee8a6b4a4917c131e1eb778ef51437c897fe29993f55e87c3e80.css?body=1" for 127.0.0.1 at 2018-07-19 16:44:31 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:44:35 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3250ms (Views: 3249.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-88ab751fd6f1b52a644e00765eeb687dd87afd4235425ab7ec65621b0c875f04.css?body=1" for 127.0.0.1 at 2018-07-19 16:44:38 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:44:50 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3205ms (Views: 3204.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-a8c26ea61a217db943e94bf9e3cd3d432be2bfa50ef4c324d7e1ded967bb7225.css?body=1" for 127.0.0.1 at 2018-07-19 16:44:54 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:45:01 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3260ms (Views: 3259.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-1d6ec09ebca11992329592753bd8a797e0ab8d2e1a211323676bb88489651895.css?body=1" for 127.0.0.1 at 2018-07-19 16:45:05 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:45:15 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3230ms (Views: 3229.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-61b4f7563106c8c5f3eba5dbaaa7cdec5f4a9c32beb8dd57c947b70b58bc0ae6.css?body=1" for 127.0.0.1 at 2018-07-19 16:45:18 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:45:24 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3275ms (Views: 3274.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-d54a3223ca403396eed96c005e439365a88ce53112da1412c46a7b4c42400110.css?body=1" for 127.0.0.1 at 2018-07-19 16:45:27 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:48:26 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:48:29 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:48:45 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:49:35 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:50:27 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.5ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:51:07 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3233ms (Views: 3232.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-1322d0b0751623509090b4bd96f18a08e9ba024677945a1743277d42f69482a9.css?body=1" for 127.0.0.1 at 2018-07-19 16:51:10 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:51:31 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3254ms (Views: 3253.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-801e5cc3480bd98e59de51d4cf233346d87e5a892ac5747a811443d197a0b640.css?body=1" for 127.0.0.1 at 2018-07-19 16:51:35 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:51:41 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3178ms (Views: 3177.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-493ad9b328176516274fefeb9acb9f364771a1b4f1ead0ae76786eab9987a54a.css?body=1" for 127.0.0.1 at 2018-07-19 16:51:44 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:51:47 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3281ms (Views: 3280.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-41c6991d330b48872a9cabe3e097c82a44cab66054696934e7b9419763d63a96.css?body=1" for 127.0.0.1 at 2018-07-19 16:51:50 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:51:57 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:52:40 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3220ms (Views: 3219.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-816e27768e18ce99d6f3df7e6b9bbcdd4a0250950ad804ee6083fd0614fdf27f.css?body=1" for 127.0.0.1 at 2018-07-19 16:52:43 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:52:57 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 16:54:13 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3279ms (Views: 3278.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-c0cda22e7d7485635174540f39a2e84b15ea27d4c3793ebdbc12e6a2d0e2f8f0.css?body=1" for 127.0.0.1 at 2018-07-19 16:54:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCourses (20180719012107)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TEMPORARY TABLE "acourses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "universities_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "courses"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id","created_at","updated_at") VALUES (1, 'Ciência da Computação', 100.0, NULL, '2018-07-19 01:51:54.872861', '2018-07-19 01:51:54.872861')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score","universities_id","created_at","updated_at") VALUES (2, 'Odontologia', 98.0, NULL, '2018-07-19 01:51:54.944366', '2018-07-19 01:51:54.944366')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id","created_at","updated_at") VALUES (3, 'Sistemas de Informação', 92.0, 33, '2018-07-19 01:51:55.010432', '2018-07-19 01:51:55.010432')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score","universities_id","created_at","updated_at") VALUES (4, 'Engenharia Mecânica', 96.0, 33, '2018-07-19 01:51:55.098989', '2018-07-19 01:51:55.098989')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id","created_at","updated_at") VALUES (5, 'Artes Visuais', 82.4, 34, '2018-07-19 01:51:55.165425', '2018-07-19 01:51:55.165425')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "universities_id" integer, "created_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acourses"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "courses" ("id","name","score","universities_id","created_at") VALUES (1, 'Ciência da Computação', 100.0, NULL, '2018-07-19 01:51:54.872861')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id","name","score","universities_id","created_at") VALUES (2, 'Odontologia', 98.0, NULL, '2018-07-19 01:51:54.944366')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score","universities_id","created_at") VALUES (3, 'Sistemas de Informação', 92.0, 33, '2018-07-19 01:51:55.010432')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id","name","score","universities_id","created_at") VALUES (4, 'Engenharia Mecânica', 96.0, 33, '2018-07-19 01:51:55.098989')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score","universities_id","created_at") VALUES (5, 'Artes Visuais', 82.4, 34, '2018-07-19 01:51:55.165425')
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "acourses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "acourses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "universities_id" integer, "created_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id","created_at") VALUES (1, 'Ciência da Computação', 100.0, NULL, '2018-07-19 01:51:54.872861')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score","universities_id","created_at") VALUES (2, 'Odontologia', 98.0, NULL, '2018-07-19 01:51:54.944366')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id","created_at") VALUES (3, 'Sistemas de Informação', 92.0, 33, '2018-07-19 01:51:55.010432')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score","universities_id","created_at") VALUES (4, 'Engenharia Mecânica', 96.0, 33, '2018-07-19 01:51:55.098989')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id","created_at") VALUES (5, 'Artes Visuais', 82.4, 34, '2018-07-19 01:51:55.165425')
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "universities_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acourses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score","universities_id") VALUES (1, 'Ciência da Computação', 100.0, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id","name","score","universities_id") VALUES (2, 'Odontologia', 98.0, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score","universities_id") VALUES (3, 'Sistemas de Informação', 92.0, 33)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id","name","score","universities_id") VALUES (4, 'Engenharia Mecânica', 96.0, 33)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score","universities_id") VALUES (5, 'Artes Visuais', 82.4, 34)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "acourses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "acourses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "universities_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id") VALUES (1, 'Ciência da Computação', 100.0, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score","universities_id") VALUES (2, 'Odontologia', 98.0, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id") VALUES (3, 'Sistemas de Informação', 92.0, 33)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score","universities_id") VALUES (4, 'Engenharia Mecânica', 96.0, 33)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score","universities_id") VALUES (5, 'Artes Visuais', 82.4, 34)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "acourses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score") VALUES (1, 'Ciência da Computação', 100.0)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id","name","score") VALUES (2, 'Odontologia', 98.0)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score") VALUES (3, 'Sistemas de Informação', 92.0)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "courses" ("id","name","score") VALUES (4, 'Engenharia Mecânica', 96.0)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score") VALUES (5, 'Artes Visuais', 82.4)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "acourses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "acourses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score") VALUES (1, 'Ciência da Computação', 100.0)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score") VALUES (2, 'Odontologia', 98.0)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "acourses" ("id","name","score") VALUES (3, 'Sistemas de Informação', 92.0)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "acourses" ("id","name","score") VALUES (4, 'Engenharia Mecânica', 96.0)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "acourses" ("id","name","score") VALUES (5, 'Artes Visuais', 82.4)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acourses"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "courses" ("id","name","score") VALUES (1, 'Ciência da Computação', 100.0)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id","name","score") VALUES (2, 'Odontologia', 98.0)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score") VALUES (3, 'Sistemas de Informação', 92.0)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "courses" ("id","name","score") VALUES (4, 'Engenharia Mecânica', 96.0)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id","name","score") VALUES (5, 'Artes Visuais', 82.4)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "acourses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "acourses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score") VALUES (1, 'Ciência da Computação', 100.0)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score") VALUES (2, 'Odontologia', 98.0)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score") VALUES (3, 'Sistemas de Informação', 92.0)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name","score") VALUES (4, 'Engenharia Mecânica', 96.0)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name","score") VALUES (5, 'Artes Visuais', 82.4)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "acourses"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "courses" ("id","name") VALUES (1, 'Ciência da Computação')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "courses" ("id","name") VALUES (2, 'Odontologia')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "courses" ("id","name") VALUES (3, 'Sistemas de Informação')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "courses" ("id","name") VALUES (4, 'Engenharia Mecânica')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "courses" ("id","name") VALUES (5, 'Artes Visuais')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "acourses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "acourses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name") VALUES (1, 'Ciência da Computação')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name") VALUES (2, 'Odontologia')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name") VALUES (3, 'Sistemas de Informação')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acourses" ("id","name") VALUES (4, 'Engenharia Mecânica')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acourses" ("id","name") VALUES (5, 'Artes Visuais')
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "acourses"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id") VALUES (1)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id") VALUES (2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id") VALUES (3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "courses" ("id") VALUES (4)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "courses" ("id") VALUES (5)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "acourses"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20180719012107"]]
+  [1m[36m (62.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUniversities (20180718171749)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "universities"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180718171749"]]
+  [1m[35m (66.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUniversities (20180718171749)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "universities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "university_name" varchar, "final_score" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180718171749"]]
+  [1m[36m (49.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCourses (20180719012107)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "students_score" float, "universities_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUniversities (20180718171749)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "universities"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180718171749"]]
+  [1m[35m (69.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUniversities (20180718171749)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "universities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "university_name" varchar, "final_score" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180718171749"]]
+  [1m[36m (56.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCourses (20180719012107)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "students_score" float, "universities_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (82.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (123.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (74.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35m (101.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (77.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (62.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUniversities (20180718171749)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "universities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "university_name" varchar, "final_score" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180718171749"]]
+  [1m[36m (83.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCourses (20180719012107)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "students_score" float, "universities_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180719012107"]]
+  [1m[36m (98.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:21:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3575ms (Views: 3571.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/courses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2018-07-19 17:21:21 -0300
+
+
+Started GET "/assets/courses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-07-19 17:21:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 20:23:42.752891"], ["updated_at", "2018-07-19 20:23:42.752891"]]
+  [1m[35m (51.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 20:23:42.807256"], ["updated_at", "2018-07-19 20:23:42.807256"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 20:23:42.884678"], ["updated_at", "2018-07-19 20:23:42.884678"]]
+  [1m[35m (53.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFOP"], ["final_score", 75.8], ["created_at", "2018-07-19 20:23:42.940033"], ["updated_at", "2018-07-19 20:23:42.940033"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "courses" ("name", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ciência da Computação"], ["score", 100.0], ["created_at", "2018-07-19 20:23:43.021016"], ["updated_at", "2018-07-19 20:23:43.021016"]]
+  [1m[36m (50.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "courses" ("name", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Odontologia"], ["score", 98.0], ["created_at", "2018-07-19 20:23:43.073148"], ["updated_at", "2018-07-19 20:23:43.073148"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "courses" ("name", "score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Sistemas de Informação"], ["score", 92.0], ["universities_id", 2], ["created_at", "2018-07-19 20:23:43.150389"], ["updated_at", "2018-07-19 20:23:43.150389"]]
+  [1m[36m (109.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "courses" ("name", "score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Engenharia Mecânica"], ["score", 96.0], ["universities_id", 2], ["created_at", "2018-07-19 20:23:43.261113"], ["updated_at", "2018-07-19 20:23:43.261113"]]
+  [1m[35m (53.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Artes Visuais"], ["score", 82.4], ["universities_id", 3], ["created_at", "2018-07-19 20:23:43.316476"], ["updated_at", "2018-07-19 20:23:43.316476"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "courses"
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:23:53 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:25:18 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:26:20 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:26:28 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:26:32 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:26:44 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:27:11 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.4ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 3242ms (Views: 3240.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/rank.self-336198df00b9b86ae0857176b74549ce524aa517a7a24de908c4010d39bcd5b2.css?body=1" for 127.0.0.1 at 2018-07-19 17:27:14 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:27:25 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3381ms (Views: 3380.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-f8729e485aad585b4e3485f3b4d9b805752ed9d873f8edbefef45858c92d3ad8.css?body=1" for 127.0.0.1 at 2018-07-19 17:27:28 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:30:12 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 3239ms (Views: 3238.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-68851d0105bbf4aae547414adfd888fac9a23b667374d2df377a77841e31e6e6.css?body=1" for 127.0.0.1 at 2018-07-19 17:30:15 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:30:15 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:30:41 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:31:39 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3233ms (Views: 3232.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-056f4331986995ceecd77b15debf179d4b1c4a69921dbadf31ff164feba55535.css?body=1" for 127.0.0.1 at 2018-07-19 17:31:42 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:31:48 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:32:15 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:34:05 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3366ms (Views: 3365.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:34:09 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-5d409682fc49bc95b1f1c98dec0f5c8e39d749aaf017da935cca9a71815bf235.css?body=1" for 127.0.0.1 at 2018-07-19 17:34:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:34:40 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:34:54 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:35:54 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:36:35 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3321ms (Views: 3320.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:36:38 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-b6d9c924c5f1b062d473a23263ae1870cfb0f4321ec223d8e4e145e721348990.css?body=1" for 127.0.0.1 at 2018-07-19 17:36:38 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:36:40 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:36:57 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3269ms (Views: 3268.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:37:01 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-93e387805320bd8e468451bc76659d16cd554f49a24db02ecfaceb79f82c56b0.css?body=1" for 127.0.0.1 at 2018-07-19 17:37:01 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:37:10 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:38:41 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (18.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `get' for #<#<Class:0x007f28b0605150>:0x007f28b0ec2018>
+Did you mean?  gets
+               get_cycle
+               gem):
+     9: 	<div class="btn-toolbar mb-1" role="toolbar" aria-label="Choose ranking" >	
+    10: 		<div class="text-center rank-by-text" >	Rank by:	</div>  	
+    11: 		<div class="btn-group mr-1" role="group" >
+    12: 			<button type="button" class="btn btn-default"> <%= link_to "University" , {action: "index", controller: "rank"}, :method => get%> </button>
+    13: 			<button type="button" class="btn btn-default"> Course </button>
+    14: 			<button type="button" class="btn btn-default"> Student's Score</button>    
+    15: 		</div>
+  app/views/rank/index.html.erb:12:in `_app_views_rank_index_html_erb__1378456703599418753_69906371838260'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:38:56 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:39:33 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3134ms (Views: 3133.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/rank.self-868ef956692e2c32b272a943978288f42378175f9a2539f74bbfdc191f08b7a0.css?body=1" for 127.0.0.1 at 2018-07-19 17:39:36 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:39:36 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:39:37 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:41:13 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3292ms (Views: 3291.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-8c1414bf1ede5deab92632d60efd7239a379ce11da487c88d6e5efc3d97e54b2.css?body=1" for 127.0.0.1 at 2018-07-19 17:41:16 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:41:25 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3490ms (Views: 3489.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-cd82c43546b201c268857224942f1c446a463582dc2c5ed40f9a5b4dc46d766e.css?body=1" for 127.0.0.1 at 2018-07-19 17:41:28 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:42:28 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3428ms (Views: 3427.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-7e87611994ec774c708f058b491214e66dac41a3465444912567c61d74986a01.css?body=1" for 127.0.0.1 at 2018-07-19 17:42:31 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:42:36 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3454ms (Views: 3453.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-7691b23c77182698b2454e81d34f53b0286ce3af6c98bc82bf879e47fef238b3.css?body=1" for 127.0.0.1 at 2018-07-19 17:42:39 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:42:57 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3446ms (Views: 3445.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/rank.self-a943e73b0eeea664f5413ff03b2eec22511b2a9d1668c21f276d16c01229e26b.css?body=1" for 127.0.0.1 at 2018-07-19 17:43:01 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:43:03 -0300
+Processing by RankController#index as HTML
+  Parameters: {"authenticity_token"=>"72/SjNBfiWfKQtY3jHzQsgD5a18So/Wp99eOO9enzP2EMqRS8thwuxGzC6B9cOc8vkJ90xpgYAqQMTv4mCYUbg=="}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:43:06 -0300
+Processing by RankController#index as HTML
+  Parameters: {"authenticity_token"=>"QT+ZBocu7iR2ydQH6k9KPvT2DJ2+w4wPBlnUs1XdJv4qYu/YpakX+K04CZAbQ32wSk0aEbYAGaxhv2FwGlz+bQ=="}
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:43:53 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3431ms (Views: 3429.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-7d867dc60b61d4dcb43e530f7ca1fd45b66ec2767e77fc7532fd847feb8b63dd.css?body=1" for 127.0.0.1 at 2018-07-19 17:43:56 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:44:00 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3347ms (Views: 3346.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rank.self-93965776d56c2013d48f9d442d5680277c8046b1377abd7b4175b0cc9c52ce10.css?body=1" for 127.0.0.1 at 2018-07-19 17:44:03 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:44:07 -0300
+Processing by RankController#index as HTML
+  Parameters: {"authenticity_token"=>"8Bja3Qiih9JzeFZcDALIOMcRr58XmkoklPs7jFy4QxmbRawDKiV+DqiJi8v9Dv+2eaq5Ex9Z34fzHY5PEzmbig=="}
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:44:11 -0300
+Processing by RankController#index as HTML
+  Parameters: {"authenticity_token"=>"9vWzxY5g/HXSoT2kpAljKC+oKJ90vbZ/RvBM/lhygFadqMUbrOcFqQlQ4DNVBVSmkRM+E3x+I9whFvk9F/NYxQ=="}
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:50:59 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 33ms (Views: 29.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rank/bycourse" for 127.0.0.1 at 2018-07-19 17:51:09 -0300
+
+AbstractController::ActionNotFound (The action 'by_courses' could not be found for CoursesController):
+  /usr/lib/ruby/vendor_ruby/abstract_controller/base.rb:132:in `process'
+  /usr/lib/ruby/vendor_ruby/action_view/rendering.rb:30:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:196:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:237:in `block in action'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:43:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:43:in `block in serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `each'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.10) lib/rack/etag.rb:24:in `call'
+  rack (1.6.10) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.10) lib/rack/head.rb:13:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:220:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:88:in `__run_callbacks__'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:81:in `run_callbacks'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/reloader.rb:73:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.0ms)
+
+
+Started GET "/courses/bycourse" for 127.0.0.1 at 2018-07-19 17:52:17 -0300
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"bycourse"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 32ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Course with 'id'=bycourse):
+  app/controllers/courses_controller.rb:7:in `show'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.0ms)
+
+
+Started GET "/courses/bycourse" for 127.0.0.1 at 2018-07-19 17:52:46 -0300
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"bycourse"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Course with 'id'=bycourse):
+  app/controllers/courses_controller.rb:7:in `show'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:53:07 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:53:23 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/bycourse" for 127.0.0.1 at 2018-07-19 17:53:51 -0300
+
+AbstractController::ActionNotFound (The action 'by_courses' could not be found for CoursesController):
+  /usr/lib/ruby/vendor_ruby/abstract_controller/base.rb:132:in `process'
+  /usr/lib/ruby/vendor_ruby/action_view/rendering.rb:30:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:196:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:237:in `block in action'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:43:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:43:in `block in serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `each'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.10) lib/rack/etag.rb:24:in `call'
+  rack (1.6.10) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.10) lib/rack/head.rb:13:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:220:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:88:in `__run_callbacks__'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:81:in `run_callbacks'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/reloader.rb:73:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:54:15 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/by_course" for 127.0.0.1 at 2018-07-19 17:54:17 -0300
+
+AbstractController::ActionNotFound (The action 'by_courses' could not be found for CoursesController):
+  /usr/lib/ruby/vendor_ruby/abstract_controller/base.rb:132:in `process'
+  /usr/lib/ruby/vendor_ruby/action_view/rendering.rb:30:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:196:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:237:in `block in action'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:43:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:43:in `block in serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `each'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.10) lib/rack/etag.rb:24:in `call'
+  rack (1.6.10) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.10) lib/rack/head.rb:13:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:220:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:88:in `__run_callbacks__'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:81:in `run_callbacks'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/reloader.rb:73:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:54:43 -0300
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses/by_course" for 127.0.0.1 at 2018-07-19 17:54:48 -0300
+Processing by CoursesController#by_courses as HTML
+  Parameters: {"authenticity_token"=>"nhxpdpdDQdMMvUgx3ETv0nDMCme1ACoxiQfavY/i6nT1QR+otcS4D9dMlaYtSNhczncc673Dv5Lu4W9+wGMy5w=="}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template courses/by_courses, application/by_courses with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/livia/Documents/AcademicRank/app/views"
+):
+  /usr/lib/ruby/vendor_ruby/action_view/path_set.rb:46:in `find'
+  /usr/lib/ruby/vendor_ruby/action_view/lookup_context.rb:121:in `find'
+  /usr/lib/ruby/vendor_ruby/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  /usr/lib/ruby/vendor_ruby/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  /usr/lib/ruby/vendor_ruby/action_view/renderer/template_renderer.rb:8:in `render'
+  /usr/lib/ruby/vendor_ruby/action_view/renderer/renderer.rb:46:in `render_template'
+  /usr/lib/ruby/vendor_ruby/action_view/renderer/renderer.rb:27:in `render'
+  /usr/lib/ruby/vendor_ruby/action_view/rendering.rb:100:in `_render_template'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/streaming.rb:217:in `_render_template'
+  /usr/lib/ruby/vendor_ruby/action_view/rendering.rb:83:in `render_to_body'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rendering.rb:32:in `render_to_body'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/renderers.rb:37:in `render_to_body'
+  /usr/lib/ruby/vendor_ruby/abstract_controller/rendering.rb:25:in `render'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rendering.rb:16:in `render'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  /usr/lib/ruby/vendor_ruby/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  /usr/lib/ruby/vendor_ruby/active_support/core_ext/benchmark.rb:12:in `ms'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/instrumentation.rb:44:in `block in render'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/instrumentation.rb:43:in `render'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/implicit_render.rb:10:in `default_render'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/implicit_render.rb:5:in `send_action'
+  /usr/lib/ruby/vendor_ruby/abstract_controller/base.rb:198:in `process_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rendering.rb:10:in `process_action'
+  /usr/lib/ruby/vendor_ruby/abstract_controller/callbacks.rb:20:in `block in process_action'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:117:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:505:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:92:in `__run_callbacks__'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:81:in `run_callbacks'
+  /usr/lib/ruby/vendor_ruby/abstract_controller/callbacks.rb:19:in `process_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rescue.rb:29:in `process_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  /usr/lib/ruby/vendor_ruby/active_support/notifications.rb:164:in `block in instrument'
+  /usr/lib/ruby/vendor_ruby/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /usr/lib/ruby/vendor_ruby/active_support/notifications.rb:164:in `instrument'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/instrumentation.rb:30:in `process_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  /usr/lib/ruby/vendor_ruby/abstract_controller/base.rb:137:in `process'
+  /usr/lib/ruby/vendor_ruby/action_view/rendering.rb:30:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:196:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/metal.rb:237:in `block in action'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:43:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:43:in `block in serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `each'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.10) lib/rack/etag.rb:24:in `call'
+  rack (1.6.10) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.10) lib/rack/head.rb:13:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.10) lib/rack/session/abstract/id.rb:220:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:88:in `__run_callbacks__'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:81:in `run_callbacks'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/reloader.rb:73:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (20.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 17:57:49 -0300
+Processing by RankController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY final_score DESC[0m
+  Rendered rank/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/by_course" for 127.0.0.1 at 2018-07-19 17:57:56 -0300
+Processing by CoursesController#by_courses as HTML
+  Parameters: {"authenticity_token"=>"y6id1+HV3ObN3gHhxeUU4bTFy1RIVw4BVXhOdJSeGjag9esJw1IlOhYv3HY06SNvCn7d2ECUm6Iynvu32x/CpQ=="}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"  ORDER BY score DESC
+  Rendered courses/by_courses.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/by_students" for 127.0.0.1 at 2018-07-19 17:58:07 -0300
+Processing by CoursesController#by_students as HTML
+  Parameters: {"authenticity_token"=>"NPY+Cr3jrUqr+Yk/AQ6RaSOk83CidY99GDPWGblkHqFfq0jUn2RUlnAIVKjwAqbnnR/l/Kq2Gt5/1WPa9uXGMg=="}
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"  ORDER BY students_score DESC[0m
+  Rendered courses/by_students.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (98.7ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "students_score" float, "universities_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (100.0ms)[0m  CREATE TABLE "universities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "university_name" varchar, "final_score" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (108.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (78.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (84.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20180719012107')[0m
+  [1m[35m (66.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180718171749')
+  [1m[36m (115.1ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "score" float, "students_score" float, "universities_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (99.7ms)[0m  CREATE TABLE "universities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "university_name" varchar, "final_score" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (155.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (77.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (52.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20180719012107')[0m
+  [1m[35m (55.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20180718171749')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 20:59:50.740593"], ["updated_at", "2018-07-19 20:59:50.740593"]]
+  [1m[35m (60.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 20:59:50.803645"], ["updated_at", "2018-07-19 20:59:50.803645"]]
+  [1m[36m (86.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 20:59:50.892088"], ["updated_at", "2018-07-19 20:59:50.892088"]]
+  [1m[35m (64.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFOP"], ["final_score", 75.8], ["created_at", "2018-07-19 20:59:50.958766"], ["updated_at", "2018-07-19 20:59:50.958766"]]
+  [1m[36m (86.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ciência da Computação"], ["score", 100.0], ["students_score", 81.2], ["created_at", "2018-07-19 20:59:51.050786"], ["updated_at", "2018-07-19 20:59:51.050786"]]
+  [1m[36m (61.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Odontologia"], ["score", 98.0], ["students_score", 85.8], ["created_at", "2018-07-19 20:59:51.113931"], ["updated_at", "2018-07-19 20:59:51.113931"]]
+  [1m[35m (86.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Artes Visuais"], ["score", 82.4], ["students_score", 75.9], ["universities_id", 3], ["created_at", "2018-07-19 20:59:51.202846"], ["updated_at", "2018-07-19 20:59:51.202846"]]
+  [1m[36m (51.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sistemas de Informação"], ["score", 92.0], ["students_score", 83.1], ["universities_id", 2], ["created_at", "2018-07-19 20:59:51.257693"], ["updated_at", "2018-07-19 20:59:51.257693"]]
+  [1m[35m (75.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Engenharia Mecânica"], ["score", 96.0], ["students_score", 91.0], ["universities_id", 2], ["created_at", "2018-07-19 20:59:51.334962"], ["updated_at", "2018-07-19 20:59:51.334962"]]
+  [1m[36m (53.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 1]]
+  [1m[36m (90.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 2]]
+  [1m[35m (65.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "universities" WHERE "universities"."id" = ?  [["id", 3]]
+  [1m[36m (54.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "universities" WHERE "universities"."id" = ?[0m  [["id", 4]]
+  [1m[35m (54.4ms)[0m  commit transaction
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 1]]
+  [1m[35m (48.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "courses" WHERE "courses"."id" = ?  [["id", 2]]
+  [1m[36m (54.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 3]]
+  [1m[35m (76.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "courses" WHERE "courses"."id" = ?  [["id", 4]]
+  [1m[36m (54.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "courses" WHERE "courses"."id" = ?[0m  [["id", 5]]
+  [1m[35m (76.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFMG"], ["final_score", 77.6], ["created_at", "2018-07-19 21:00:10.332423"], ["updated_at", "2018-07-19 21:00:10.332423"]]
+  [1m[36m (52.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "USP"], ["final_score", 80.5], ["created_at", "2018-07-19 21:00:10.386269"], ["updated_at", "2018-07-19 21:00:10.386269"]]
+  [1m[35m (86.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["university_name", "UFSJ"], ["final_score", 75.9], ["created_at", "2018-07-19 21:00:10.474963"], ["updated_at", "2018-07-19 21:00:10.474963"]]
+  [1m[36m (86.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "universities" ("university_name", "final_score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["university_name", "UFOP"], ["final_score", 75.8], ["created_at", "2018-07-19 21:00:10.563419"], ["updated_at", "2018-07-19 21:00:10.563419"]]
+  [1m[35m (64.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ciência da Computação"], ["score", 100.0], ["students_score", 81.2], ["created_at", "2018-07-19 21:00:10.630847"], ["updated_at", "2018-07-19 21:00:10.630847"]]
+  [1m[35m (86.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Odontologia"], ["score", 98.0], ["students_score", 85.8], ["created_at", "2018-07-19 21:00:10.718638"], ["updated_at", "2018-07-19 21:00:10.718638"]]
+  [1m[36m (86.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Artes Visuais"], ["score", 82.4], ["students_score", 75.9], ["universities_id", 7], ["created_at", "2018-07-19 21:00:10.806891"], ["updated_at", "2018-07-19 21:00:10.806891"]]
+  [1m[35m (86.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Sistemas de Informação"], ["score", 92.0], ["students_score", 83.1], ["universities_id", 6], ["created_at", "2018-07-19 21:00:10.895475"], ["updated_at", "2018-07-19 21:00:10.895475"]]
+  [1m[36m (53.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Engenharia Mecânica"], ["score", 96.0], ["students_score", 91.0], ["universities_id", 6], ["created_at", "2018-07-19 21:00:10.950874"], ["updated_at", "2018-07-19 21:00:10.950874"]]
+  [1m[35m (64.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-19 18:00:14 -0300
+Processing by RankController#index as HTML
+  Parameters: {"authenticity_token"=>"z4bIn1gDoPripQf5gpdfrs+OobYHFutAMCtJByZRG4uk275BeoRZJjlU2m5zm2ggcTW3Og/VfuNXzfzEadDDGA=="}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/by_students" for 127.0.0.1 at 2018-07-19 18:00:23 -0300
+Processing by CoursesController#by_students as HTML
+  Parameters: {"authenticity_token"=>"DgNRl7CJuffhEtswI/1vl5kdl0rt/A+rqTDpJvck6gllXidJkg5AKzrjBqfS8VgZJ6aBxuU/mgjO1lzluKUymg=="}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"  ORDER BY students_score DESC[0m
+  Rendered courses/by_students.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/by_course" for 127.0.0.1 at 2018-07-19 18:00:40 -0300
+Processing by CoursesController#by_courses as HTML
+  Parameters: {"authenticity_token"=>"aTRGgaU4wuVewTvSrAE66An8MatsYKg85Lz2ri2lkDYCaTBfh787OYUw5kVdDQ1mt0cnJ2SjPZ+DWkNtYiRIpQ=="}
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"  ORDER BY score DESC
+  Rendered courses/by_courses.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.3ms)
