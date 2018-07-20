@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   get '/courses/by_course' => 'courses#by_courses'
   get '/courses/by_students' => 'courses#by_students'
   get '/rank/search'=> 'rank#search'
-
-  resources :universities 
+  resources :universities   
   resources :courses
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -22,20 +22,19 @@
 	</div>
 </div>
 
-
-
 	<br><br>
 	<table class="table table-hover">
 		<tr><th class="text-left">Course Name</th><th class="text-right">Student's Score</th></tr>
 		<% @courses.each do |course| %> 
-		<tr class="university"> 
-		  <td class="uni-name text-left"><i class="fas fa-sm fa-pencil-alt "></i> <%= course.name %></td> 
+		<tr class="clickable" onclick="window.location='/courses/'+<%=course.id%>;"> 
+		  <td class="uni-name text-left"> <%= course.name %></td> 
 		  <td class="uni-score text-right"><%= course.students_score %></td> 
 		</tr> 
 		<% end %>		
 	</table>
 	<br><br>
-	
+	<div><%= button_to "Add Course", {action: "new", controller: "courses" }, :method => :get, class: "btn"%>	
+	</div>
 	
 </div>
 

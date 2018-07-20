@@ -7,22 +7,10 @@
 </div>
 <br>
 
-<div class="info_university container">    
-  <%= form_for(@university) do |f| %>
-    <table class="table">
-      <tr>
-        <td class="text-center"><%= f.label :name %></td>
-        <td class="text-left line-input"> <%= f.text_field :university_name %></td>
-      </tr>
-      <tr>
-        <td class="text-center"><%= f.label :final_score %></td>
-        <td class="text-left line-input"><%= f.text_field :final_score %></td>
-      </tr>
-    </table>   	
-    <div class="actions">
-      <%= f.submit "Create", class:"btn" %>
-  	</div>
-	<%end%>
+<div class="info_university container">   
+
+<%= debug @university%> 
+
   
 </div>
 

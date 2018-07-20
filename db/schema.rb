@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 20180719012107) do
   end
 
   create_table "universities", force: :cascade do |t|
-    t.string   "university_name"
+    t.string   "name"
     t.float    "final_score"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

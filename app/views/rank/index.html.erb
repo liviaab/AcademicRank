@@ -29,7 +29,7 @@
 		<tr><th class="text-left">University Name</th><th class="text-right">Final Score</th></tr>
 		<% @universities.each do |university| %> 
 		<tr class="clickable"  onclick="window.location='/universities/'+<%=university.id%>;" > 
-		  <td class="uni-name text-left"><i class="fas fa-sm fa-pencil-alt" title="Edit University"></i> <%= university.university_name %></td> 
+		  <td class="uni-name text-left"> <%= university.name %></td> 
 		  <td class="uni-score text-right"><%= university.final_score %></td> 
 		</tr> 
 		<% end %>		
