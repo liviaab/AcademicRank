@@ -1,19 +1,28 @@
-<div class="card">
-  <h1 class="title"><%= @university.university_name%></h1>
-  <form>
-    <div class="input-container">
-      <input type="text" id="Username" required="required"/>
-      <label for="Username">Username</label>
-      <div class="bar"></div>
-    </div>
-    <div class="input-container">
-      <input type="password" id="Password" required="required"/>
-      <label for="Password">Password</label>
-      <div class="bar"></div>
-    </div>
-    <div class="button-container">
-      <button><span>Go</span></button>
-    </div>
-    <div class="footer"><a href="#">Forgot your password?</a></div>
-  </form>
+<div class="main">
+  <div class="container">
+    <h1>Academic Rank  <a href="/"><i class="fas fa-user-graduate"></i></a></h1> 
+    <p>Showing information about:</p>
+  </div>
 </div>
+<br>
+
+
+<div class="info_university container ">
+  <h1 class="title"><%= @university.university_name%></h1>
+  <%= form_for(@university) do |f| %>
+    <table class="table">
+      <tr>
+        <td class="text-center"><%= f.label :name %></td>
+        <td class="text-left line-input"> <%= f.text_field :university_name%></td>
+      </tr>
+      <tr>
+        <td class="text-center"><%= f.label :final_score %></td>
+        <td class="text-left line-input"><%= f.text_field :final_score %></td>
+      </tr>
+    </table>    
+    <div class="actions">
+      <%= f.submit "Save Editions", class:"btn" %>
+    </div>
+  <%end%> 
+</div>
+
