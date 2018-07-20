@@ -2,6 +2,43 @@
 <div class='container text-center'>
 	<div class="main">
 		<h1>Academic Rank  <a href="/"><i class="fas fa-user-graduate"></i></a></h1> 
+		<p>Search information about universities and courses.<br>The results meet at least one of the parameters used.</p>
+	</div>
+<br>
+	<div class="info_university">
+	 
+		<%= form_tag( "/rank/search_result", :action => "do_search", :method => 'get')  do %>
+		<table class="table">
+			<tr>
+				<td class="text-center"><%= label_tag :university %></td>
+	        <td class="text-left line-input"><%= select_tag "university_id", 
+	        	options_from_collection_for_select(@universities, "id", "name"), :include_blank => true %>
+	          </td>
+			</tr>
+			<tr>
+				<td class="text-center"><%= label_tag :course %></td>
+	        <td class="text-left line-input"><%= select_tag "course_id" ,
+	          options_from_collection_for_select(@courses, "id", "name"), :include_blank => true  %></td>
+			</tr>
+			<tr> 
+				<td class="text-center"><%= label_tag :university_score %></td>
+				<td class="text-left line-input"><%= text_field_tag :university_score %></td>
+			</tr>
+			<tr>
+				<td class="text-center"><%= label_tag :course_score %></td>
+				<td class="text-left line-input"><%= text_field_tag :course_score%></td>
+			</tr>
+			<tr>
+				<td class="text-center"><%= label_tag :students_score%></td>
+				<td class="text-left line-input"><%= text_field_tag :students_score%></td>
+			</tr>
+		</table>
+
+		<div class="actions">
+	      <%= submit_tag "Search", class:"btn" %>
+	    </div>
+		<%end%>
+		<br>
 	</div>
 
 </div>

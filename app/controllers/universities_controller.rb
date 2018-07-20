@@ -32,7 +32,7 @@ class UniversitiesController < ApplicationController
 	end
  
 	private
-		def uni_params
+		def uni_params			
 			params.require(:university).permit(:university_name, :final_score)
 		end
 

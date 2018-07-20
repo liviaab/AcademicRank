@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   #post '/rank' => 'rank#create'
   get '/courses/by_course' => 'courses#by_courses'
   get '/courses/by_students' => 'courses#by_students'
-  get '/rank/search'=> 'rank#search'
+  get '/rank/search' => 'rank#new_search'
+  get '/rank/search_result' => 'rank#search_result'
   resources :universities   
   resources :courses
   # The priority is based upon order of creation: first created -> highest priority.

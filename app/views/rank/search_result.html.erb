@@ -1,0 +1,28 @@
+
+<div class='container text-center'>
+	<div class="main">
+		<h1>Academic Rank  <a href="/"><i class="fas fa-user-graduate"></i></a></h1> 
+		<p>Search result:</p>
+	</div>
+
+	<div >		
+		<table class="table">
+			<tr>
+				<th>University</th>
+				<th>Final Score</th>
+				<th>Course</th>
+				<th>Score</th>
+				<th>Student's Score</th>
+			</tr>
+			<% @results.each do |result| %>
+			<tr>
+				<td><%= result.uni_name %></td>
+				<td><%= result.final_score %></td>
+				<td><%= result.name %></td>
+				<td><%= result.score %></td>
+				<td><%= result.students_score %></td>
+			</tr>
+			<%end%>
+		</table>		
+	</div>
+</div>
