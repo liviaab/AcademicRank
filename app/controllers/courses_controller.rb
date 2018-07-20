@@ -1,6 +1,8 @@
 class CoursesController < ApplicationController
+
 	def new
 		@course = Course.new
+		@message = ''
 	end
 
 	def show
@@ -28,8 +30,10 @@ class CoursesController < ApplicationController
 	def create
 		@course = Course.new(course_params)
 		if @course.save
+			@message = "Record created."
 			redirect_to '/'
 		else
+			@message = "Error. Possible Causes: Missing parameter or there is a course registered under that name in that university."
 			render 'new'
 		end
 	end

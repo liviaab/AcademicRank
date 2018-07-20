@@ -1,4 +1,3 @@
-
 <div class='container text-center'>
 	<div class="main">
 		<h1>Academic Rank  <a href="/"><i class="fas fa-user-graduate"></i></a></h1> 
@@ -24,10 +23,15 @@
 
 	<br><br>
 	<table class="table table-hover">
-		<tr><th class="text-left">Course Name</th><th class="text-right">Student's Score</th></tr>
+		<tr>
+			<th class="text-left">Course Name</th>
+			<th class="text-center">University</th>			
+			<th class="text-right">Student's Score</th>
+		</tr>
 		<% @courses.each do |course| %> 
 		<tr class="clickable" onclick="window.location='/courses/'+<%=course.id%>;"> 
 		  <td class="uni-name text-left"> <%= course.name %></td> 
+		  <td class="text-center"> <%= University.find(course.universities_id).name %></td>		  
 		  <td class="uni-score text-right"><%= course.students_score %></td> 
 		</tr> 
 		<% end %>		

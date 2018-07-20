@@ -4,8 +4,33 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+cc: 
+  name: Ciência da Computação
+  score: 100
+  students_score: 81.2
+  universities_id: ufmg.id
+
+
+odonto:
+  name: Odontologia
+  score: 98,
+  students_score: 85.8
+  universities_id: ufmg.id
+
+av:
+  name: Artes Visuais
+  score: 82.4 
+  students_score: 75.9 
+  universities_id: ufsj.id
+
+si: 
+  name: Sistemas de Informação
+  score: 92
+  students_score: 83.1
+  universities_id: usp.id
+
+mec:
+  name: Engenharia Mecânica
+  score: 96
+  students_score: 91.0
+  universities_id: usp.id

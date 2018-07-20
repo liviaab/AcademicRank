@@ -15,9 +15,9 @@ class RankController < ApplicationController
 
 	def search_result
 		
-		@results = Course
+		@results = University
 					.select("courses.*, universities.name as uni_name, universities.final_score")
-					.joins("INNER JOIN universities on universities.id = courses.universities_id")
+					.joins("LEFT JOIN courses on universities.id = courses.universities_id")
 					.where("universities.id = ? OR universities.final_score >= ? 
 						OR courses.id = ? OR courses.score >= ? OR courses.students_score >= ? ", 
 						params[:university_id], params[:university_score],
