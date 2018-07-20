@@ -20,9 +20,13 @@
         <td class="text-left line-input"><%= f.text_field :final_score %></td>
       </tr>
     </table>   	
+    <%= @message%>
     <div class="actions">
       <%= f.submit "Create", class:"btn" %>
   	</div>
+
+
+
 	<%end%>
   <br>
   <div><%= button_to "Add Course", {action: "new", controller: "courses" }, :method => :get, class: "btn"%> 
