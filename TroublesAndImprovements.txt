@@ -1,0 +1,7 @@
+-	Deixar o layout mais agradável e user-friendly;
+-	P: Na tela de busca, dropdown de cursos com nomes repetidos. Deveria ser feito uma query que preenche apenas com os nomes de cursos cadastrados;
+-	P: Não tem cadastro individual de alunos e suas notas. O sistema poderia calcular as demais notas automaticamente a partir dessas, mas, por questões de simplicidade, o usuário informa no cadastro as notas da universidade e de cada curso;
+-	P: Não é possível deletar. Criar uma tela na qual os cursos e universidades podem ser removidos;
+-	Melhorar a tradução (course => major ?);
+-	Mostrar, definir e melhorar mensagens de erro e como exibi-las;
+-	Estudare criar mais testes do controller, view e testes de integração
