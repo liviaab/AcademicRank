@@ -22,14 +22,14 @@
 	</div>
 </div>
 
-
-
-	<br><br>
+	<br>
+		<div class="text-right"><a href="/rank/search"><i class="fas fa-search" title="Advanced Search"></i></a></div>
+	<br>
 	<table class="table table-hover">
 		<tr><th class="text-left">University Name</th><th class="text-right">Final Score</th></tr>
 		<% @universities.each do |university| %> 
-		<tr class="university"> 
-		  <td class="uni-name text-left"><i class="fas fa-sm fa-pencil-alt "></i> <%= university.university_name %></td> 
+		<tr class="clickable"  onclick="window.location='/universities/'+<%=university.id%>;" > 
+		  <td class="uni-name text-left"><i class="fas fa-sm fa-pencil-alt" title="Edit University"></i> <%= university.university_name %></td> 
 		  <td class="uni-score text-right"><%= university.final_score %></td> 
 		</tr> 
 		<% end %>		

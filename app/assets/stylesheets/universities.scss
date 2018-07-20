@@ -1,3 +1,42 @@
 // Place all the styles related to the Universities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_university form{
+	width: 50%;
+	margin: auto;
+}
+
+
+.line-input input{
+	border: none;
+	border-bottom: 1px solid gray;
+}
+
+.new_university td input{
+	width: 100%;
+}
+
+.new_university input:focus{
+	outline: none;
+}
+
+
+
+.new_university .table{
+	border: none;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+
+.new_university .table td{
+	border: none;
+	padding: 0.5em 0;
+
+}
+
+
+.new_university .actions{
+	margin-top: 1em;
+}

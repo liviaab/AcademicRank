@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #post '/rank' => 'rank#create'
   get '/courses/by_course' => 'courses#by_courses'
   get '/courses/by_students' => 'courses#by_students'
+  get '/rank/search'=> 'rank#search'
 
   resources :universities 
   resources :courses

@@ -2,25 +2,28 @@
 <div class="main">
   <div class="container">
     <h1>Academic Rank  <i class="fas fa-user-graduate"></i></h1> 
-    <p>In this page you can add universities to our rank.</p>
+    <p>Add universities to our rank.</p>
   </div>
 </div>
+<br>
 
-
-<div class="create">
-  <div class="container">
+  <div class="new_university container">
     
     <%= form_for(@university) do |f| %>
-      <div class="field">
-    		<%= f.label :name %>
-        <%= f.text_field :university_name %> <br><br>
-        <%= f.label :final_score %>
-        <%= f.text_field :final_score %><br><br>
-    	</div>
+      <table class="table">
+        <tr>
+          <td class="text-center"><%= f.label :name %></td>
+          <td class="text-left line-input"> <%= f.text_field :university_name %></td>
+        </tr>
+        <tr>
+          <td class="text-center"><%= f.label :final_score %></td>
+          <td class="text-left line-input"><%= f.text_field :final_score %></td>
+        </tr>
+      </table>   	
       <div class="actions">
-        <%= f.submit "Create" %>
+        <%= f.submit "Create", class:"btn" %>
     	</div>
   	<%end%>
     
   </div>
-</div>
+

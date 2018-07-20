@@ -6,7 +6,7 @@
 body{
 	font-family: 'Source Sans Pro', sans-serif;	
 	width: 100%;
-    min-width: 500px;
+    min-width: 770px;
     margin:0;
     padding:0;
 	text-align: center;
@@ -43,7 +43,14 @@ table, container {
 }
 
 a:-webkit-any-link {
-    text-decoration: none;
-    
+    text-decoration: none;    
     color: black;
+}
+
+tr{
+	cursor: pointer;
+}
+
+tr:first-child{
+	cursor: default;
 }
