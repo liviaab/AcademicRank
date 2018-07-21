@@ -2819,3 +2819,395 @@ Processing by CoursesController#new as HTML
   Rendered courses/new.html.erb within layouts/application (3.4ms)
 Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "universities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('MyString', 1.5, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('MyString', 1.5, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFMG', 77.6, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 846911793)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('USP', 80.5, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 963389603)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFSJ', 75.9, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 411736661)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFOP', 75.8, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 60767862)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Ciência da Computação', 100.0, 81.2, 0, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 464657020)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Odontologia', 98.0, 85.8, 0, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 327159015)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Artes Visuais', 82.4, 75.9, 0, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 72981522)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Sistemas de Informação', 92.0, 83.1, 0, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 832954679)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Engenharia Mecânica', 96.0, 91.0, 0, '2018-07-20 23:41:52', '2018-07-20 23:41:52', 863972962)[0m
+  [1m[35m (72.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------
+UniversitiesControllerTest: test_should_get_new_university
+----------------------------------------------------------
+Processing by UniversitiesController#new as HTML
+  Rendered universities/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 218ms (Views: 215.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+RankControllerTest: test_should_get_index
+-----------------------------------------
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+RankControllerTest: test_should_get_search
+------------------------------------------
+Processing by RankController#new_search as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY name ASC[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"  ORDER BY name ASC
+  Rendered rank/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------
+UniversityTest: test_uni_score_is_number
+----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------
+UniversityTest: test_nil_university
+-----------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------
+UniversityTest: test_nil_university_name
+----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UniversityTest: test_nil_university_score
+-----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+CoursesControllerTest: test_should_get_new_course
+-------------------------------------------------
+Processing by CoursesController#new as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY "universities"."name" ASC[0m
+  Rendered courses/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+CourseTest: test_nil_students_score
+-----------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------
+CourseTest: test_nil_course_score
+---------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------
+CourseTest: test_nil_university_fk
+----------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" IS NULL) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" IS NULL) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------
+CourseTest: test_nil_course_and_score
+-------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------
+CourseTest: test_has_foreign_key
+--------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "ABC"], ["score", 78.5], ["students_score", 80.1], ["universities_id", 1], ["created_at", "2018-07-20 23:41:52.830855"], ["updated_at", "2018-07-20 23:41:52.830855"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."id" != 863972963 AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------
+CourseTest: test_uni_id_is_number
+---------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 0) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 0) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------
+CourseTest: test_score_is_number
+--------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+CourseTest: test_students_score_is_number
+-----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+CourseTest: test_nil_course_and_students_score
+----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------
+CourseTest: test_nil_course
+---------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" IS NULL AND "courses"."universities_id" IS NULL) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" IS NULL AND "courses"."universities_id" IS NULL) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------
+CourseTest: test_nil_course_name
+--------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "universities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('MyString', 1.5, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('MyString', 1.5, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFMG', 77.6, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 846911793)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('USP', 80.5, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 963389603)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFSJ', 75.9, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 411736661)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFOP', 75.8, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 60767862)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Ciência da Computação', 100.0, 81.2, 0, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 464657020)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Odontologia', 98.0, 85.8, 0, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 327159015)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Artes Visuais', 82.4, 75.9, 0, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 72981522)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Sistemas de Informação', 92.0, 83.1, 0, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 832954679)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Engenharia Mecânica', 96.0, 91.0, 0, '2018-07-20 23:42:23', '2018-07-20 23:42:23', 863972962)[0m
+  [1m[35m (67.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------
+CourseTest: test_has_foreign_key
+--------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "ABC"], ["score", 78.5], ["students_score", 80.1], ["universities_id", 1], ["created_at", "2018-07-20 23:42:23.670386"], ["updated_at", "2018-07-20 23:42:23.670386"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."id" != 863972963 AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+CourseTest: test_nil_course_and_students_score
+----------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------
+CourseTest: test_nil_course_name
+--------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = '' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+CourseTest: test_students_score_is_number
+-----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------
+CourseTest: test_nil_students_score
+-----------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.3ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------
+CourseTest: test_nil_university_fk
+----------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" IS NULL) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" IS NULL) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------
+CourseTest: test_nil_course_score
+---------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.2ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------
+CourseTest: test_score_is_number
+--------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------
+CourseTest: test_nil_course
+---------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" IS NULL AND "courses"."universities_id" IS NULL) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" IS NULL AND "courses"."universities_id" IS NULL) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------
+CourseTest: test_nil_course_and_score
+-------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------
+CourseTest: test_uni_id_is_number
+---------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 0) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mCourse Exists (0.1ms)[0m  SELECT  1 AS one FROM "courses" WHERE ("courses"."name" = 'ABC' AND "courses"."universities_id" = 0) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------
+UniversityTest: test_uni_score_is_number
+----------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UniversityTest: test_nil_university_score
+-----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = 'ABC' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------
+UniversityTest: test_nil_university_name
+----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------
+UniversityTest: test_nil_university
+-----------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUniversity Exists (0.1ms)[0m  SELECT  1 AS one FROM "universities" WHERE "universities"."name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "universities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('MyString', 1.5, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('MyString', 1.5, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 298486374)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFMG', 77.6, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 846911793)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('USP', 80.5, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 963389603)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFSJ', 75.9, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 411736661)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "universities" ("name", "final_score", "created_at", "updated_at", "id") VALUES ('UFOP', 75.8, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 60767862)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Ciência da Computação', 100.0, 81.2, 0, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 464657020)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Odontologia', 98.0, 85.8, 0, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 327159015)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Artes Visuais', 82.4, 75.9, 0, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 72981522)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Sistemas de Informação', 92.0, 83.1, 0, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 832954679)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "courses" ("name", "score", "students_score", "universities_id", "created_at", "updated_at", "id") VALUES ('Engenharia Mecânica', 96.0, 91.0, 0, '2018-07-20 23:43:01', '2018-07-20 23:43:01', 863972962)[0m
+  [1m[35m (52.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------
+UniversitiesControllerTest: test_should_get_new_university
+----------------------------------------------------------
+Processing by UniversitiesController#new as HTML
+  Rendered universities/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 220ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+RankControllerTest: test_should_get_index
+-----------------------------------------
+Processing by RankController#index as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"  ORDER BY final_score DESC
+  Rendered rank/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+RankControllerTest: test_should_get_search
+------------------------------------------
+Processing by RankController#new_search as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY name ASC[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"  ORDER BY name ASC
+  Rendered rank/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+CoursesControllerTest: test_should_get_new_course
+-------------------------------------------------
+Processing by CoursesController#new as HTML
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT "universities".* FROM "universities"  ORDER BY "universities"."name" ASC[0m
+  Rendered courses/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
